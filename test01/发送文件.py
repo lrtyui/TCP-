@@ -10,7 +10,7 @@ count = 0
 flag = 1
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #建立连接:
-s.connect(('47.113.217.150', 8080))
+s.connect(('目标IP', 8080))
 while True:
     if count == 0:
         s.send(filesize.encode(encoding="utf-8"))
