@@ -1,6 +1,6 @@
 import socket
 tcp_clint=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-tcp_clint.connect(("47.113.217.150",8080))
+tcp_clint.connect(("目的IP",8080))
 send="hello world"
 data=send.encode(encoding="utf-8")
 tcp_clint.send(data)
